@@ -2,10 +2,7 @@ import { Link } from 'react-router-dom';
 import JerseyDisplay from '../components/JerseyDisplay';
 
 // Import relative image paths from support (Vite will handle these)
-import cansLineup from '../../support/Portfolio-2024/assets/images/DDBC_cans_1260x578.jpg';
 import illustrationSpotlight from '../../support/Portfolio-2024/assets/images/Apricot_Blonde_Illustration_1260x877.jpg';
-import twelvePack from '../../support/Portfolio-2024/assets/images/Apricot_Blonde_12_pack_1260x1100.jpg';
-import mixedPack from '../../support/Portfolio-2024/assets/images/Booty_Box_12_pack_1260x1100.jpg';
 import bikeJerseyAb from '../../support/Portfolio-2024/assets/images/ab_bike_jersey_poster_410x410.jpg';
 import bikeJerseyHa from '../../support/Portfolio-2024/assets/images/ha_bike_jersey_poster_410x410.jpg';
 
@@ -83,7 +80,7 @@ export default function CaseStudyDryDock() {
       <section className='w-full px-5 mb-12 md:mb-20'>
         <div className='max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/5'>
           <img
-            src={cansLineup}
+            src='/case-studies/DDBC-4-Can-Lineup_1280px.jpg'
             alt='Dry Dock Core Can Lineup'
             className='w-full h-auto'
           />
@@ -140,7 +137,7 @@ export default function CaseStudyDryDock() {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
           <div className='group overflow-hidden rounded-2xl border border-white/5 bg-zinc-800/50'>
             <img
-              src={twelvePack}
+              src='/case-studies/DDBC-Apricot-Blonde-12-Pack_1280px.jpg'
               alt='Apricot Blonde 12-Pack Nature Shot'
               className='w-full h-auto group-hover:scale-105 transition-transform duration-300 ease-in-out'
             />
@@ -156,7 +153,7 @@ export default function CaseStudyDryDock() {
           </div>
           <div className='group overflow-hidden rounded-2xl border border-white/5 bg-zinc-800/50'>
             <img
-              src={mixedPack}
+              src='/case-studies/DDBC-Booty-Box-12-Pack_1280px.jpg'
               alt='Dry Dock Booty Box Nature Shot'
               className='w-full h-auto group-hover:scale-105 transition-transform duration-300 ease-in-out'
             />
