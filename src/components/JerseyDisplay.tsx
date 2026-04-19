@@ -13,10 +13,10 @@ function Model({ url, isActive }: { url: string; isActive: boolean }) {
   });
 
   // Smoothly scale up on hover
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (ref.current) {
       const targetScale = isActive ? 3.0 : 2.9;
-      ref.current.scale.lerp(new THREE.Vector3(targetScale, targetScale, targetScale), 0.1);
+      ref.current.scale.lerp(new THREE.Vector3(targetScale, targetScale, targetScale), 0.1 * (delta * 60));
     }
   });
 
@@ -25,10 +25,12 @@ function Model({ url, isActive }: { url: string; isActive: boolean }) {
 
 export default function JerseyDisplay({ 
   modelPath, 
-  title 
+  title,
+  posterUrl
 }: { 
   modelPath: string; 
   title: string; 
+  posterUrl?: string;
 }) {
   const [isActive, setIsActive] = useState(false);
 

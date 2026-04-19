@@ -44,7 +44,7 @@ const mobileScreens = [
 function MobileCarousel() {
   const [current, setCurrent] = useState(0);
   const [interacted, setInteracted] = useState(false);
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const timerRef = useRef<any>(null);
 
   const [prevImg, setPrevImg] = useState(mobileScreens[0].src);
   const [nextImg, setNextImg] = useState(mobileScreens[0].src);
@@ -165,7 +165,7 @@ export default function CaseStudyNextAscent() {
   const [activePage, setActivePage] = useState(0);
   const [activeImage, setActiveImage] = useState(0);
   const [userInteracted, setUserInteracted] = useState(false);
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const intervalRef = useRef<any>(null);
 
   // Auto-cycle the home hero images every 8s — only when on the homepage tab
   useEffect(() => {

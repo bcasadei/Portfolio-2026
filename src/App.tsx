@@ -5,7 +5,7 @@ declare global {
     gtag: (...args: any[]) => void;
   }
 }
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Environment } from '@react-three/drei';
 import { EvolutionScene } from './components/EvolutionScene';

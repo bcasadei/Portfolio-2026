@@ -25,7 +25,7 @@ export function BlobMark({
   const materialRef = useRef<any>(null)
   const meshRef = useRef<THREE.Mesh>(null)
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (materialRef.current) {
       // Snap opacity instead of a slow cinematic crossfade
       const targetOpacity = isActive ? 1 : 0;
