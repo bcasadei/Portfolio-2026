@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <>
       <div
-        className={`min-h-[75vh] flex flex-col items-center justify-center px-5 md:px-0 pointer-events-none transition-opacity duration-300 ease-in-out ${isVideoOpen ? 'opacity-0' : 'opacity-100'}`}>
+        className={`min-h-[80dvh] pt-40 md:pt-0 pb-12 flex flex-col items-center justify-center px-5 md:px-0 pointer-events-none transition-opacity duration-300 ease-in-out ${isVideoOpen ? 'opacity-0' : 'opacity-100'}`}>
         {/* Play Reel Button */}
         {/* <button
           onClick={() => setIsVideoOpen(true)}
