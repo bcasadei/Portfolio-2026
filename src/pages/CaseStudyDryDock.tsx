@@ -83,7 +83,7 @@ export default function CaseStudyDryDock() {
       <section className='w-full px-5 mb-12 md:mb-20'>
         <div className='max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/5'>
           <img
-            src='/case-studies/DDBC-4-Can-Lineup_1280px.jpg'
+            src={cansLineup}
             alt='Dry Dock Core Can Lineup'
             className='w-full h-auto'
           />
@@ -140,7 +140,7 @@ export default function CaseStudyDryDock() {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
           <div className='group overflow-hidden rounded-2xl border border-white/5 bg-zinc-800/50'>
             <img
-              src='/case-studies/DDBC-Apricot-Blonde-12-Pack_1280px.jpg'
+              src={twelvePack}
               alt='Apricot Blonde 12-Pack Nature Shot'
               className='w-full h-auto group-hover:scale-105 transition-transform duration-300 ease-in-out'
             />
@@ -156,7 +156,7 @@ export default function CaseStudyDryDock() {
           </div>
           <div className='group overflow-hidden rounded-2xl border border-white/5 bg-zinc-800/50'>
             <img
-              src='/case-studies/DDBC-Booty-Box-12-Pack_1280px.jpg'
+              src={mixedPack}
               alt='Dry Dock Booty Box Nature Shot'
               className='w-full h-auto group-hover:scale-105 transition-transform duration-300 ease-in-out'
             />

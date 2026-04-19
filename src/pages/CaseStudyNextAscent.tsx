@@ -165,7 +165,6 @@ export default function CaseStudyNextAscent() {
   const [activePage, setActivePage] = useState(0);
   const [activeImage, setActiveImage] = useState(0);
   const [userInteracted, setUserInteracted] = useState(false);
-  const intervalRef = useRef<any>(null);
 
   // Auto-cycle the home hero images every 8s — only when on the homepage tab
   useEffect(() => {

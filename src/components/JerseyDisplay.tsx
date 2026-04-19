@@ -26,7 +26,7 @@ function Model({ url, isActive }: { url: string; isActive: boolean }) {
 export default function JerseyDisplay({ 
   modelPath, 
   title,
-  posterUrl
+  posterUrl: _posterUrl
 }: { 
   modelPath: string; 
   title: string; 
@@ -51,7 +51,7 @@ export default function JerseyDisplay({
           <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} castShadow />
           
           <Suspense fallback={null}>
-            <Stage environment="city" intensity={0.6} contactShadow={false} adjustCamera={false}>
+            <Stage environment="city" intensity={0.6} adjustCamera={false}>
               <Model url={modelPath} isActive={isActive} />
             </Stage>
             <ContactShadows position={[0, -2, 0]} opacity={0.4} scale={10} blur={2.5} far={4.5} />
