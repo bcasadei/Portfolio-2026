@@ -30,7 +30,7 @@ function App() {
   // Scroll to top and track page view on route change
   useEffect(() => {
     window.scrollTo(0, 0);
-    
+
     // Explicitly track page view for GA4 on SPA route changes
     if (typeof window.gtag === 'function') {
       window.gtag('config', 'G-LF1MK329TK', {
@@ -43,14 +43,14 @@ function App() {
     <div className='relative w-full min-h-dvh bg-zinc-900 flex flex-col'>
       {/* 1. BASE: Ambient Video (Basement) */}
       <div className='fixed inset-0 z-0 pointer-events-none'>
-        <video
+        {/* <video
           autoPlay
           loop
           muted
           playsInline
-          className='object-cover w-full h-full opacity-40 mix-blend-screen pointer-events-none'>
-          {/* Reels */}
-        </video>
+          className='object-cover w-full h-full opacity-40 mix-blend-screen pointer-events-none'> */}
+        {/* Reels */}
+        {/* </video> */}
         <div className='absolute bottom-0 left-0 right-0 h-[40vh] bg-linear-to-t from-black to-transparent pointer-events-none z-10'></div>
       </div>
 

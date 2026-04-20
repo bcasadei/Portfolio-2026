@@ -47,8 +47,8 @@ export default function CaseStudyDreamingElectric() {
             </h6>
             <p className='text-zinc-300 text-sm md:text-base leading-relaxed'>
               Utilizing cutting-edge diffusion models and high-end video
-              synthesis, each episode is a technical study in consistent character
-              generation and atmospheric lighting.
+              synthesis, each episode is a technical study in consistent
+              character generation and atmospheric lighting.
             </p>
           </div>
           <div className='glass p-8 md:p-10 rounded-2xl border border-white/10'>
@@ -60,7 +60,9 @@ export default function CaseStudyDreamingElectric() {
               <li>Motion Graphics</li>
               <li>AI Video Synthesis</li>
               <li>Sound Design</li>
-              <li>ComfyUI production workflow for repeatable AI video generation</li>
+              <li>
+                ComfyUI production workflow for repeatable AI video generation
+              </li>
               <li>A growing library of original video content</li>
             </ul>
           </div>
@@ -89,7 +91,7 @@ export default function CaseStudyDreamingElectric() {
       </section>
 
       {/* 4. Project in Focus: Full Speed */}
-      <section className='max-w-7xl mx-auto px-5 py-20 border-t border-white/5'>
+      <section className='max-w-7xl mx-auto px-5 pt-20 pb-10 md:pb-20 border-t border-white/5'>
         <div className='mb-12'>
           <h6 className='font-mono text-primary text-[12px] tracking-[0.5em] uppercase mb-4'>
             Project in Focus
@@ -102,7 +104,7 @@ export default function CaseStudyDreamingElectric() {
 
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-start'>
           {/* Left: Video Embed */}
-          <div className='space-y-6'>
+          <div className='space-y-8'>
             <div className='aspect-video w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black'>
               <iframe
                 className='w-full h-full'
@@ -116,6 +118,22 @@ export default function CaseStudyDreamingElectric() {
               frame-by-frame character stability and environment cohesion across
               multiple generative passes.
             </p>
+
+            <div className='pt-8 border-t border-white/5'>
+              <h4 className='text-white font-medium mb-4 uppercase tracking-wider'>
+                Why Open Source?
+              </h4>
+              <p className='text-zinc-400 text-sm md:text-base leading-relaxed'>
+                The Arca Gidan contest required the use of 75%+ open-source
+                models (utilizing weights like Wan, LTXV, Flux, and Z-Image).
+                Local open-source ecosystems offer a level of production
+                sovereignty and privacy unattainable through commercial AI
+                models. By leveraging dedicated hardware, we eliminated
+                per-generation costs while drastically reducing the
+                environmental footprint compared to energy-intensive hosted
+                cloud solutions.
+              </p>
+            </div>
           </div>
 
           {/* Right: Character Sheet & Narrative */}
@@ -166,7 +184,7 @@ export default function CaseStudyDreamingElectric() {
       </section>
 
       {/* 5. Pillars & Workflow */}
-      <section className='max-w-7xl mx-auto px-5 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-start'>
+      <section className='max-w-7xl mx-auto px-5 pt-10 md:pt-20 pb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-start'>
         {/* Left: Pillars */}
         <div className='space-y-12'>
           <div>
